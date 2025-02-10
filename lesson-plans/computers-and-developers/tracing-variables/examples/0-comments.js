@@ -8,6 +8,12 @@ TODO: explain what comments are
   - block comments (this is a block comment)
   - inline comments
 
-*/
+/*
 
-// this is an inline comment
+// Manloi here
+
+/* Hi there
+
+Nice to meet you!
+
+/*

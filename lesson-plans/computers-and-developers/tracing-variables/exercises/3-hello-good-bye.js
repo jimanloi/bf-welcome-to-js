@@ -6,6 +6,8 @@
 
 */
 
+// Name
+
 let first = 'Pieter';
 let last = 'Rabbit';
 
@@ -13,7 +15,11 @@ let fullName = first + ' ' + last;
 
 console.log(fullName);
 
+// Greetings
+
 let greeting = 'hello ' + fullName;
+
+console.log(greeting);
 
 greeting = 'good bye ' + fullName;
 
