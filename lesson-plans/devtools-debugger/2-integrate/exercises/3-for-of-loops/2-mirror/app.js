@@ -12,12 +12,16 @@ whenFormDataChanges('input', () => {
   // --- read the user's input ---
 
   let userText = readString('to-mirror');
+  let separator = readString('separator');
+  if (separator === '') {
+    separator = '|';
+  }
 
   // --- mirror the text ---
 
-  let mirrored = ' | ';
+  let mirrored = ' ' + separator + ' ';
   for (let char of userText) {
-    mirrored = char + mirrored + char;
+    mirrored = char.toUpperCase() + mirrored + char.toLowerCase();
   }
 
   // --- display the result ---
