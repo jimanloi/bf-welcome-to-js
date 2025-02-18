@@ -5,8 +5,8 @@ console.log('--- in execution phase ---');
 /*
   environment:
 
-  name:
-  message:
+  name: ReferenceError
+  message: Cannot access 'tomatoes' before initialization
 
   location:
 
@@ -17,6 +17,5 @@ console.log('--- in execution phase ---');
   the fix(es):
 */
 
-console.log(tomatoes);
-
 let tomatoes = 'fresh';
+console.log(tomatoes);

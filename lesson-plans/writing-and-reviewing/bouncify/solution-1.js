@@ -23,3 +23,24 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+let userInput = '';
+
+while (userInput === '' || userInput === null) {
+  userInput = prompt('Enter some text:');
+}
+
+let bouncified = '';
+
+let isUpperCase = true;
+
+for (let char of userInput) {
+  if (char.match(/[a-zA-Z]/)) {
+    bouncified += isUpperCase ? char.toUpperCase() : char.toLowerCase();
+    isUpperCase = !isUpperCase;
+  } else {
+    bouncified += char;
+  }
+}
+
+alert(bouncified);

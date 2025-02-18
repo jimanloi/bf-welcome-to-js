@@ -1,15 +1,12 @@
-
-
 'use strict';
 
 console.log('--- in execution phase ---');
 
-
 /*
   environment:
 
-  name:
-  message:
+  name: SyntaxError
+  message: Failed to execute 'appendChild' on 'Node': Invalid or unexpected token
 
   location:
 
@@ -20,7 +17,6 @@ console.log('--- in execution phase ---');
   the fix(es):
 */
 
-const a = 'this is
-two lines';
+const a = 'this is\ntwo lines';
 
-
+console.log(a);

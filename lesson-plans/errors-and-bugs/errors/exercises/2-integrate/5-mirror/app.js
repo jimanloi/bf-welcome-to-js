@@ -20,7 +20,8 @@ import {
 */
 
 whenFormDataChanges('input', () => {
-  console.log(--- form data changed ---);
+  debugger;
+  console.log('--- form data changed ---');
 
   // --- read the user's input ---
 

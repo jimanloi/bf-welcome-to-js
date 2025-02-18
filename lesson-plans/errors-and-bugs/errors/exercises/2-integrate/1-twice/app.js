@@ -21,6 +21,7 @@ import {
 */
 
 whenFormDataChanges('user-data', () => {
+  // debugger;
   console.log('\n--- form data changed ---');
 
   // --- read user input ---
@@ -29,7 +30,7 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 
