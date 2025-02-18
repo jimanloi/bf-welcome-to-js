@@ -17,6 +17,6 @@ console.log('--- in execution phase ---');
   the fix(es):
 */
 
-let tree = 'oak';
+let tree1 = 'oak';
 
-let tree = 'birch';
+let tree2 = 'birch';
