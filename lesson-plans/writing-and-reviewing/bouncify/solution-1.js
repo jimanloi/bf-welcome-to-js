@@ -24,10 +24,19 @@
 
 */
 
-let userInput = '';
+let userInput;
 
-while (userInput === '' || userInput === null) {
-  userInput = prompt('Enter some text:');
+while (!userInput) {
+  userInput = prompt('Enter some text, the letters will be bouncified.');
+
+  if (userInput === '') {
+    alert('no empty input, try again.');
+    continue;
+  } else if (userInput === null) {
+    alert('there is no escape!');
+    continue;
+  }
+  break;
 }
 
 let bouncified = '';
